@@ -8387,28 +8387,23 @@ $$\text{Recall} = \frac{\text{True Positives}} {\text{True Positives} + \text{Fa
 </ol>
 <p>Real-World Application: Decision trees are widely used in finance for credit scoring. They help financial institutions evaluate the creditworthiness of applicants by analyzing various attributes such as income, credit history, and existing debts.</p>
 <p>Strengths:</p>
-<pre><code>Interpretability: Decision trees are easy to understand and visualize, making them accessible for non-experts.
+<p>Interpretability: Decision trees are easy to understand and visualize, making them accessible for non-experts.
 Handling Non-linear Relationships: They can model complex relationships without requiring extensive data preprocessing.
 Feature Importance: Decision trees provide insights into which features are the most significant predictors, facilitating feature selection.
-</code></pre>
-<p>Weaknesses:</p>
+Weaknesses:</p>
 <p>Overfitting:
     Decision trees can easily become too complex, capturing noise in the data instead of the underlying pattern, leading to poor generalization on unseen data.
 Instability: A small change in the data can lead to a completely different tree, making them sensitive to variations in the dataset.
 Suitability: Decision trees are suitable for this problem because they can handle categorical features, such as work class and education level, effectively and allow for straightforward interpretation of how different demographic factors impact income levels.</p>
-<ol start="2">
-<li>Random Forest Classifier
- Real-World Application: Random forests are extensively used in healthcare for patient diagnosis. By combining multiple decision trees, they can predict disease outcomes based on patient data, such as medical history, symptoms, and lab results.</li>
-</ol>
-<p>Strengths:</p>
-<pre><code>Robustness: Random forests reduce the risk of overfitting compared to individual decision trees by averaging the results of many trees, leading to better generalization.
-</code></pre>
-<p>Handling Missing Values: They can handle missing values and maintain accuracy even when a significant portion of data is absent.
-Feature Importance: Like decision trees, random forests can provide insights into feature importance, helping identify key predictors.
+<p>2.Logistic Regression
+Strengths:</p>
+<p>Interpretability: Logistic Regression is highly interpretable, with coefficients that show the direct impact of each feature on the probability of the target outcome. This is invaluable for applications requiring clear, explainable models.
+Efficiency in High-Dimensional Spaces: Logistic Regression is computationally efficient and performs well even with large datasets, making it suitable for real-world applications where data volume can be high.
+Good Regularization Options: Techniques like L1 and L2 regularization are available in Logistic Regression, which helps to prevent overfitting by controlling model complexity.
 Weaknesses:</p>
-<p>Complexity: The ensemble nature of random forests can make them less interpretable than a single decision tree, which might be a drawback for applications requiring clear decision paths.
-Computationally Intensive: They can be slower to train and require more computational resources than simpler models.
-Suitability: Random forests are a good candidate for this problem as they can handle a mix of continuous and categorical variables in the census data and are less prone to overfitting, leading to more reliable predictions.</p>
+<p>Limited to Linear Boundaries: Logistic Regression assumes a linear relationship between features and the log-odds of the outcome, which makes it less effective in capturing complex, non-linear interactions.
+Sensitivity to Outliers: Logistic Regression can be affected by outliers, as they can distort the coefficients, especially if proper data preprocessing isn’t done.
+Suitability for the Problem: Logistic Regression is a good fit for this census-based income prediction project because it provides clear, interpretable results that show how demographic factors (like education, occupation, and marital status) impact income levels. Its probabilistic outputs can also be helpful for threshold-based classification, allowing for easy adjustment of sensitivity. Although it doesn’t handle non-linear relationships directly, its simplicity and efficiency make it a robust option for initial modeling in structured data scenarios.</p>
 <ol start="3">
 <li>Support Vector Machine (SVM)</li>
 </ol>
@@ -8422,10 +8417,11 @@ Sensitivity to Noise: SVMs can be sensitive to outliers, which can significantly
 Suitability: SVMs can be a good fit for this problem because they are capable of creating complex decision boundaries, which can effectively separate income categories based on various demographic features in the census data.</p>
 <p>References:</p>
 <ol>
-<li>Han, J., Kamber, M., &amp; Pei, J. (2011). Data Mining: Concepts and Techniques. Morgan Kaufmann.</li>
+<li>Han, J., Pei, J., &amp; Kamber, M. (2011). Data Mining: Concepts and Techniques. Morgan Kaufmann.</li>
 <li>Bishop, C. M. (2006). Pattern Recognition and Machine Learning. Springer.</li>
 <li>Zhang, H., &amp; Wang, M. (2018). "A Review of Decision Tree Classifier Algorithms". Journal of Software Engineering and Applications, 11(2), 75-86.</li>
 </ol>
+<p>4.Murphy, K. P. (2012). Machine Learning: A Probabilistic Perspective. MIT Press.</p>
 </div>
 </div>
 </div>
@@ -9314,20 +9310,6 @@ Reducing the data to only five features has led to a decrease in both the F-scor
 <p><strong>Note</strong>: Once you have completed all of the code implementations and successfully answered each question above, you may finalize your work by exporting the iPython Notebook as an HTML document. You can do this by using the menu above and navigating to</p>
 </blockquote>
 <p><strong>File -&gt; Download as -&gt; HTML (.html)</strong>. Include the finished document along with this notebook as your submission.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-</div>
 </div>
 </div>
 </div>
